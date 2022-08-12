@@ -1,0 +1,146 @@
+:root {
+    --clr-white: #FFFFFF;
+}
+
+body, html {
+    height: 100%;
+}
+
+body, h1, h2, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: rgba(214, 225, 255, 0.75);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
+    color: #1F2E55;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 21px;
+    color: #1F2E55;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+    color: #717FA6;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--clr-white);
+    width: 100%;
+}
+
+.card {
+    background-color: var(--clr-white);
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 1.25rem;
+    margin: 1rem;
+}
+
+.hero img {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.content {
+    padding: 3rem;
+}
+
+.description {
+    margin-bottom: 1.25rem;
+}
+
+.plan {
+    background-color: #F7F9FF;
+    border-radius: 11px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-plan {
+    margin-left: 1.25rem;
+}
+
+.price {
+    font-size: 16px;
+    line-height: 21px;
+    color: #717FA6;
+    margin-top: 0.375rem;
+}
+
+.change-plan {
+    font-size: 14px;
+    line-height: 19px;
+    color: #766CF1;
+}
+
+button {
+    font-weight: 900;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    cursor: pointer;
+}
+
+.primary {
+    background: #766CF1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-radius: 11px;
+    color: var(--clr-white);
+}
+
+.secondary {
+    color: #1F2E55;
+    background: transparent;
+}
+
+/* utility selectors */
+.font-medium {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
