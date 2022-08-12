@@ -19,6 +19,7 @@ body {
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-color: rgba(214, 225, 255, 0.75);
+    background-size: contain;
     font-family: 'Red Hat Display', sans-serif;
     display: flex;
     align-items: center;
